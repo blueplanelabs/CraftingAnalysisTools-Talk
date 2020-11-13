@@ -1,2 +1,2 @@
 # CraftingAnalysisTools-Talk
-Slides and source code demo for "Crafting Analysis Tools with Pharo" talk.
+Slides and demo's source code for "Crafting Analysis Tools with Pharo" talk.
