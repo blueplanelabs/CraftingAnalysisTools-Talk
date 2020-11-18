@@ -8,7 +8,7 @@ Class {
 CATCraftingAnalysisToolsSlidesSectionHome >> create [
 	| sectionContainer cardsContainer |
 	sectionContainer := self newSectionContainer.
-	sectionContainer addChild: (self newSectionTitle: 'Crafting Analysis Tools Slideshows').
+	sectionContainer addChild: (self newSectionTitle: 'Analysis Tools Slides').
 	cardsContainer := self newCardsContainer.
 	cardsContainer addChild: (self 
 		newShowCardWithTitle: 'Crafting Analysis Tools with Pharo' 
