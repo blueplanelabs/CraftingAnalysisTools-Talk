@@ -6,17 +6,18 @@ Class {
 
 { #category : #accessing }
 CATCraftingAnalysisToolsSlidesSectionHome >> create [
-	| tmp1 tmp2 |
-	tmp1 := self newSectionContainer.
-	tmp1
-		addChild: (self newSectionTitle: 'Herramientas de An√°lisis de Software').
-	tmp2 := self newCardsContainer.
-	tmp2
+	| sectionContainer cardsContainer |
+	sectionContainer := self newSectionContainer.
+	sectionContainer
+		addChild: (self newSectionTitle: 'Herramientas de Análisis de Software').
+	cardsContainer := self newCardsContainer.
+	
+	cardsContainer
 		addChild:
 			(self
-				newShowCardWithTitle: 'Creando Herramientas de An√°lisis de Sofware con Pharo'
-				slideshow: [ CATCraftingAnalysisToolsSlides new ]
-				description: 'C√≥mo crear herramientas de an√°lisis de software usando Pharo, Moose y GToolkitHow.').
-	tmp1 addChild: tmp2.
-	^ tmp1
+				newShowCardWithTitle: 'Creando Herramientas de Análisis de Sofware con Pharo'
+				slideshow: [ GtLiveShow createWithArrowsVisible: CATCraftingAnalysisToolsSlides new ]
+				description: 'Cómo crear herramientas de análisis de software usando Pharo, Moose y GToolkitHow.').
+	sectionContainer addChild: cardsContainer.
+	^ sectionContainer
 ]

@@ -316,19 +316,19 @@ CATCraftingAnalysisToolsSlides >> softwareAssessmentSectionSlideFor: arg1 [
 ]
 
 { #category : #accessing }
-CATCraftingAnalysisToolsSlides >> titleSlideFor: arg1 [
+CATCraftingAnalysisToolsSlides >> titleSlideFor: aSlide [
 	<gtSlide>
 	| tmp2 tmp4 tmp6 |
-	tmp2 := arg1 title.
+	tmp2 := aSlide title.
 	tmp2 priority: 1.
-	tmp4 := 'Creando Herramientas de An√°lisis de Software con Pharo'
+	tmp4 := 'Creando Herramientas de Análisis de Software con Pharo'
 		asRopedText.
 	tmp4
 		fontSize: 50;
 		glamorousRegularFont;
 		thin;
 		in: [ :arg2 | 
-			(arg2 from: 1 to: 'Creando Herramientas de An√°lisis de Software' size)
+			(arg2 from: 1 to: 'Creando Herramientas de Análisis de Software' size)
 				bold ].
 	tmp2 titleWithFormat: tmp4 yourself.
 	tmp6 := 'Caso de estudio: Fuga de datos en AWS lambdas' asRopedText.
